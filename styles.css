@@ -1,0 +1,147 @@
+@font-face {
+  font-family: NotoSans;
+  src: url("NotoSans-hinted/NotoSans-Light.ttf");
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: NotoSans;
+  color: white;
+  padding: 0;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+ul, header, .container, footer {
+  width: 100vw;
+}
+
+ul {
+  height: 6.5vw;
+  max-height: 10vh;
+  margin: 0;
+  padding: 1.7vw;
+}
+ul .nav-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+ul .nav-container .logo {
+  display: inline-block;
+  height: 100%;
+}
+ul .nav-container .logo img {
+  height: 100%;
+}
+ul .nav-container .links {
+  position: absolute;
+  height: 30%;
+  width: 33%;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+}
+ul .nav-container .links li {
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+ul .nav-container .links li a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.2vw;
+}
+
+.container .profile img {
+  width: 100%;
+}
+
+header {
+  height: fit-content;
+  position: relative;
+  margin: 0 0 1.7vw 0;
+}
+header img {
+  width: 100%;
+}
+header h1 {
+  position: absolute;
+  top: 40%;
+  font-size: 5.2vw;
+  margin: 0.84vw;
+}
+
+.container .profile {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: calc(33% - 1.7vw);
+  margin: 0 0 1.7vw 1.7vw;
+}
+.container .profile .text-container {
+  position: absolute;
+  height: 29%;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container .profile .text-container h1, .container .profile .text-container h3 {
+  margin: 0;
+}
+.container .profile .text-container h1 {
+  text-align: right;
+  width: 100%;
+  height: fit-content;
+  font-size: 3vw;
+}
+.container .profile .text-container h3 {
+  text-align: right;
+  width: 100%;
+  height: fit-content;
+  font-size: 2vw;
+}
+.container .profile .text-container p {
+  display: none;
+  width: 100%;
+  font-size: 1.2vw;
+  padding: 0.84vw;
+}
+.container .profile:hover .text-container {
+  height: 71%;
+  top: 29%;
+}
+.container .profile:hover .text-container p {
+  display: block;
+}
+
+.info {
+  margin: 1.7vw;
+  color: #263238;
+  font-size: 2vw;
+}
+
+footer {
+  width: 100%;
+  height: 60vh;
+  margin-top: 3.4vw;
+  padding: 1.7vw;
+  background-color: #263238;
+  font-size: 1.2vw;
+  flex: 1 1 auto;
+}
+footer div {
+  text-align: center;
+}
+footer div .icons {
+  position: absolute;
+  font-size: 2vw;
+  display: inline-block;
+  right: 1.7vw;
+}
+
+/*# sourceMappingURL=styles.css.map */
