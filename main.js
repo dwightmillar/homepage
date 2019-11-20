@@ -44,11 +44,9 @@ function mergeData() {
 }
 
 function createProfiles() {
-  console.log(employees);
 
   for(let profileIndex = 0; profileIndex < 3; profileIndex++) {
     let employeeIndex = Math.floor((Math.random() * employees.length));
-    console.log(employees);
     $(".container").append(`<div class='profile'>
                               <img src='${imagesFolder}${employees[employeeIndex].full}' alt='employee'>
                               <div class='text-container'>
@@ -57,10 +55,6 @@ function createProfiles() {
                                 <p>${employees[employeeIndex].description}</p>
                               </div>
                             </div>`)
-    // $(".container").append(`<img src='${imagesFolder}${employees[employeeIndex].full}' alt='employee'>`)
-    // $(".container").append(`<h1>${employees[employeeIndex].first_name} ${employees[employeeIndex].last_name}</h1>`)
-    // $(".container").append(`<h3>${employees[employeeIndex].title}</h3>`)
-    // $(".container").append(`<p>${employees[employeeIndex].description}</p>`)
     employees.splice(employeeIndex, 1);
   }
 }

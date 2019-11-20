@@ -21,51 +21,60 @@ ul, header, .container, footer {
 }
 
 ul {
-  height: 6.5vw;
+  height: 20vh;
   max-height: 10vh;
   margin: 0;
-  padding: 1.7vw;
+  padding: 1.7vh;
 }
 ul .nav-container {
   height: 100%;
-  width: 100%;
+  width: calc(100% - 1.7vh);
   position: relative;
 }
 ul .nav-container .logo {
   display: inline-block;
   height: 100%;
+  width: 100%;
+  text-align: center;
 }
 ul .nav-container .logo img {
   height: 100%;
 }
 ul .nav-container .links {
   position: absolute;
-  height: 30%;
-  width: 50%;
+  top: 15vh;
+  height: 25vh;
+  width: 100%;
   bottom: 0;
   right: 0;
   display: inline-block;
 }
 ul .nav-container .links li {
   text-align: center;
-  width: 30%;
-  display: inline-block;
+  height: 33%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
 }
 ul .nav-container .links li a {
+  position: relative;
+  top: 25%;
   color: #263238;
   text-decoration: none;
   font-weight: bolder;
-  font-size: calc(8px + 1vw);
+  font-size: calc(8px + 2vh);
 }
-
-.container .profile img {
-  width: 100%;
+ul .nav-container .links li:active {
+  background-color: #282727;
+}
+ul .nav-container .links li:active a {
+  color: #009688;
 }
 
 header {
+  display: none;
   height: fit-content;
   position: relative;
-  margin: 0 0 1.7vw 0;
 }
 header img {
   width: 100%;
@@ -77,12 +86,15 @@ header h1 {
   margin: 0.84vw;
 }
 
+.container {
+  margin: 29.2vh 0 0 0;
+}
 .container .profile {
   display: inline-block;
   position: relative;
   height: 100%;
-  width: calc(33% - 1.7vw);
-  margin: 0 0 1.7vw 1.7vw;
+  width: calc(100% - 1.7vh);
+  margin: 0 0 1.7vh 1.7vh;
 }
 .container .profile .text-container {
   position: absolute;
@@ -98,19 +110,22 @@ header h1 {
 }
 .container .profile .text-container h1 {
   text-transform: uppercase;
-  font-size: 3vw;
-  line-height: 3vw;
+  font-size: 5vh;
+  line-height: 5vh;
 }
 .container .profile .text-container h3 {
   text-transform: lowercase;
-  font-size: 1.6vw;
-  line-height: 1.6vw;
+  font-size: 3vh;
+  line-height: 3vh;
 }
 .container .profile .text-container p {
   display: none;
   width: calc(100% - 3.4vw);
-  font-size: calc(3px + 1vw);
+  font-size: 1.8vh;
   padding: 1.7vw;
+}
+.container .profile .text-container img {
+  width: 100%;
 }
 .container .profile:hover .text-container {
   background-color: rgba(0, 0, 0, 0.5);
@@ -122,28 +137,30 @@ header h1 {
 }
 
 .info {
-  margin: 1.7vw;
+  width: 50%;
+  margin: 0 0 1.7vh 1.7vh;
   color: #263238;
-  font-size: 2vw;
+  font-size: 2.3vh;
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 60vh;
   margin-top: 3.4vw;
-  padding: 1.7vw;
+  padding: 1.7vh;
   background-color: #263238;
-  font-size: 1.2vw;
-  flex: 1 1 auto;
+  font-size: 1.5vh;
 }
 footer div {
+  width: 100%;
   text-align: center;
 }
 footer div .icons {
-  position: absolute;
-  font-size: 2vw;
-  display: inline-block;
-  right: 1.7vw;
+  width: 100vw;
+  display: block;
+  text-align: center;
+  font-size: 3vh;
+  margin: 1.7vh;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=mobile-styles.css.map */
