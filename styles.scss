@@ -42,7 +42,7 @@ ul {
     .links {
       position: absolute;
       height: 30%;
-      width: 50%;
+      width: 36%;
       bottom: 0;
       right: 0;
       display: inline-block;
@@ -54,7 +54,7 @@ ul {
           color: $primarycolor;
           text-decoration: none;
           font-weight: bolder;
-          font-size: calc(8px + 1vw);
+          font-size: calc(4px + 1vw);
         }
       }
     }
