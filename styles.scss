@@ -61,6 +61,14 @@ ul {
   }
 }
 
+.container {
+  .profile {
+    img {
+      width: 100%
+    }
+  }
+}
+
 header {
   height: fit-content;
   position: relative;
@@ -111,9 +119,6 @@ header {
         width: calc(100% - 3.4vw);
         font-size: calc(3px + 1vw);
         padding: 1.7vw;
-      }
-      img {
-        width: 100%
       }
     }
   }
